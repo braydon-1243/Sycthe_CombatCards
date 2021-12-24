@@ -1,0 +1,32 @@
+- Users will have a user name and password
+- Users will have a list of cards
+
+------ GUI ------ 
+Level 1. Pop up window that prompts for user name and password (displayLogInScreen)
+        Options
+            Add user -- DONE
+            Change password --TO DO LATER
+            View Users --TO DO LATER
+            Forgot Password --TO DO LATER
+Level 2. Display the User Profile of user (displayUserProfile)
+        Options
+            Draw Card(s) --TO DO
+            Use Cards --TO DO
+            Close window (Log out) --TO DO
+
+Level 3. Display the options for user to select cards to play (displayPlayCardsScreen)
+        Options
+            Use Dropdown window to select card to play (5 options dropdown windows)
+            Ok (confirmation required)
+            Close Window (close window which returns us back to user profile)
+        Exiting Level 3 will return user to Level 2. From there the user can close the window.
+
+        Display the options for user to draw cards (displayDrawCardsScreen)
+        Options
+            Draw #of cards button with confirmation window.
+            Once confirmed the window will close and you will be back at the user profile
+------ Back End ------
+- The information will all be stored in a dictionary with the user's information Keyed by the username
+- The cards will be stored in a list and then randomized (cardList)
+- The discarded cards will be stored in another list (discardList)
+- Once cardList has reached a size of 0 the discardList will be put into cardList and then shuffled.
